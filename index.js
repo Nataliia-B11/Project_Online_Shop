@@ -179,9 +179,9 @@ function closeForm(){
 
 LoadProducts();
 
-if (!products){
+if (products.length===0){
     products=productsArr;
- }
+};
  
 renderProducts(products);
 
