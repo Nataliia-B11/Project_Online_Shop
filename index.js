@@ -179,7 +179,7 @@ function closeForm(){
 
 LoadProducts();
 
-if (products.length===0){
+if (!products){
     products=productsArr;
 };
  
