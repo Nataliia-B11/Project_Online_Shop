@@ -1,0 +1,136 @@
+body{
+   background-color:rgb(113, 168, 113);
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
+}
+.shop_header{ 
+   height: 400px;
+   width: 100%;
+   background-image: url("img_project/Christmas_Tree.png");
+   text-align: left;
+   background-size: cover;
+}
+.products__title{
+   margin-left: 20px; 
+   font-size: 40px; 
+}
+.products__title_header{
+    margin-left: 20px; 
+    font-size: 80px; 
+}
+.title_slogan{
+    margin-left: 20px; 
+    font-size: 30px;
+    font-style: italic;  
+    color: crimson;
+}
+.ptoducts_find{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.dropdown{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 700; 
+}
+#sort{
+    width: 170px;
+    height: 25px;
+}
+.product-card{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(252, 253, 253);
+    margin: 10px;
+}
+.product-img{
+    height: 150px;
+    width: 150px;
+}
+.product-card_c_t_d{
+    width: 60%;
+    margin-left:30px ;
+    margin-right:10px;
+    margin-top: 0;
+    font-size: 16px;
+  
+   
+} 
+.product-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px;
+    width: 10%;
+
+}
+.product-card_p_q{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top:0
+    margin-bottom:0;
+    width: 20%;  
+    font-size: 16px; 
+    font-weight: 400;
+}
+.product_button{
+    width: 80px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.button_delete{
+    background-color: rgb(237, 87, 87);
+}
+.button_edit{
+   background-color: rgb(86, 144, 89);
+}
+.show_form{
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    background-color: rgb(223, 194, 155); 
+    margin-left:20px ;
+    font-size: 20px;
+    font-weight: 700;
+}
+.modal_form{
+    width: 400px;
+    height: 70%;  
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 30px; 
+    padding-bottom: 30px; 
+    left:100px;
+    top: 100px;
+    overflow: auto; 
+    background-color: rgb(223, 194, 155); 
+    padding-left: 50px;
+    margin-left: 200px ;
+    font-size: 20px;
+    font-weight: 700;
+}
+.hidden {
+    display: none;
+}
+.totalPrice{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-left: 800px;
+    
+}
+.add_totalprise{
+    display: flex;
+    flex-direction: row;
+}
+.form_button{
+    height: 20px;
+    width: 70px;
+    margin: 15px;
+    background-color: rgb(230, 168, 125);
+}

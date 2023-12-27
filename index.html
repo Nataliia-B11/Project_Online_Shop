@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Project</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="shop_header">
+    <h2 class="products__title">Online Shop</h2>
+    <h1 class="products__title_header">Christmas Decor</h1>
+    <p class="title_slogan">Anything for happy holidays!</p>
+    <div class="ptoducts_find">
+      <label>Find product</label><br>
+      <input id="findProduct" type="text" onchange="renderProducts(products)"><br><br>
+    </div>
+  </div> 
+
+  <div class="dropdown">
+    <label for="category">To sort by:</label><br>
+    <div id="myDropdown" class="dropdown-content">
+      <select id="sort" onchange="sortProducts()">
+        <option id="sortQuantity" value="sortQuantity">Quantity</option>
+        <option id="sortPrice" value="sortPrice">Price</option>
+      </select><br><br>
+    </div>
+  </div>
+
+  <section class="products_container">
+    <h2 id="products" class="products__title">Products:</h2>
+    <div class="products__list"></div>
+  </section>
+
+  <div class="add_totalprise">
+      <button class="show_form" onclick="showForm()">Add new product:</button>
+      <p class='totalPrice' id="totalPrice"></p>
+  </div>
+
+  <div class="modal_form  hidden" id="modal_form">
+    <form id="myform">
+      <label for="title">Title:</label><br>
+      <input type="text" id="title"><br><br>
+
+      <label for="category">Category:</label><br>
+      <select id="category">
+        <option value="Christmas Balls">Christmas Balls</option>
+        <option value="Stockings">Stockings</option>
+        <option value="Wreaths">Wreaths</option>
+        <option value="other">Other</option>
+      </select><br><br>
+
+      <label for="description">Description:</label><br>
+      <input type="text" id="description"><br><br>
+
+      <label for="price">Price:</label><br>
+      <input type="number" id="price"><br><br>
+
+      <label for="quantity">Quantity:</label><br>
+      <input type="number" id="quantity"><br><br>
+
+      <label for="imageUrl">Image:</label><br>
+
+      <input id="imageUrl" type="imageUrl"><br><br>
+
+      <button id="submit" class="form_button" onclick="addProduct">Add</button>
+      <button id="submit" class="form_button" onclick="closeForm()">Cancel</button>
+    </form>
+  </div>
+
+ 
+
+  <script src="index.js"></script>
+</body>
+
+</html>
